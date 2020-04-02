@@ -1,4 +1,4 @@
-   /*
+ /*
         grid-width: 114rem 1140px /10;
         gutter-vertical: 80px / 10 8rem;
         gutter-horizontal: 60px / 10 6 rem;
@@ -527,6 +527,18 @@ p{
 
 .pricing-container:not(:last-child) {
     margin-bottom: 80px;
+}
+
+
+.col-1-of-3{
+    width: calc((100% - 2 * 60px)/3 );
+    background-color: orange;
+    float: left;
+    
+}
+
+.col-1-of-3:not(:last-child){
+    margin-right: 60px;
 }
 
 /*clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);*/
