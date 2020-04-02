@@ -441,5 +441,17 @@ p{
     height:100vh;
     background-color: lightsteelblue;
 }
+
+.pricing-container{
+            max-width: 1140px;
+            background-color:lightgray;
+            margin: 0 auto;
+            margin-bottom: 80px;
+}
+
+
+.pricing-container:not(:last-child) {
+    margin-bottom: 80px;
+}
 /*clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);*/
 
