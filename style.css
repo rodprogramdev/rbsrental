@@ -552,8 +552,11 @@ p{
 .footer-container{
     display:flex;
     color:white;
+    font-size: 20px;
+    text-align: center;
 }
 
-.footer-credits a:link{ text-decoration:none;}
+ a:link{ 
+     text-decoration:none;
+    }
     
-}
