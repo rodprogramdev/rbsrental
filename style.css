@@ -554,4 +554,6 @@ p{
     color:white;
 }
 
-.footer-credits
+.footer-credits a:link{ text-decoration:none;}
+    
+}
