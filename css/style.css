@@ -518,7 +518,7 @@ p{
     background-image: linear-gradient(to right bottom, 
     rgba(1, 2, 2, 0.171),  
     rgba(248, 248, 247, 0.418)),
-    url("../images/couples.jpg");
+    url("../images/neonbrand-Wp7t4cWN-68-unsplash.jpg");
     background-size: cover;
 }
 
@@ -537,7 +537,7 @@ p{
 
 .col-1-of-3{
     width: calc((100% - 2 * 60px)/3 );
-    background-color: orange;
+    background-color: white;
     float: left;
     
 }
