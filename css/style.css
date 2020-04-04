@@ -116,7 +116,7 @@ body{
     background-image: linear-gradient(to right bottom, 
     rgba(1, 2, 2, 0.171),  
     rgba(248, 248, 247, 0.418)),
-    url("images/couples.jpg");
+    url("../images/couples.jpg");
     background-size: cover;
     background-position: bottom;
     position: relative;
