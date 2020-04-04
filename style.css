@@ -515,7 +515,7 @@ p{
 .section-pricing{
     
     height:100vh;
-    background-color: lightsteelblue;
+    background-color: #b0c4de;
 }
 
 .pricing-container{
@@ -543,8 +543,15 @@ p{
 }
 
 /*clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);*/
-.footer{
-    height: 100vh;
-    background-color: black;
 
+.footer {
+    height: 40vh;
+    background-color:black;
 }
+
+.footer-container{
+    display:flex;
+    color:white;
+}
+
+.footer-credits
