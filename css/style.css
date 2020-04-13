@@ -529,7 +529,7 @@ p{
 .pricing-container{
             position: absolute;
             max-width: 1140px;
-            background-color:rgb(211, 211, 211);
+            /*background-color:rgb(211, 211, 211);*/
             margin: 0 auto;
             margin-bottom: 80px;
             text-align:center;
@@ -563,8 +563,14 @@ p{
     
     padding: 25px;
     box-shadow: 0 15px 4rem rgba(0, 0, 0, 0.555);
-
+    transition: transition .3s;
 }
+
+.pricing__cards--1:hover{
+    transform: translateY(-1.5rem) scale(1);
+    cursor:pointer;
+}
+
 
 .pricing-cards__icon--1{
     font-size: 4rem;
@@ -573,7 +579,9 @@ p{
     background-image: linear-gradient(to right, rgb(19, 56, 10), rgb(236, 20, 20));
     -webkit-background-clip: text;
     color:transparent;
+   
 }
+
 
 .pricing__cards--2{
    
@@ -583,6 +591,11 @@ p{
     
     padding: 25px;
     box-shadow: 0 15px 4rem rgba(0, 0, 0, 0.555);
+    transition: transition .3s;
+}
+.pricing__cards--2:hover{
+    transform: translateY(-1.5rem) scale(1);
+    cursor:pointer;
 }
 
 .pricing-cards__icon--2{
@@ -601,7 +614,12 @@ p{
     
     padding: 20px;
     box-shadow: 0 15px 4rem rgba(0, 0, 0, 0.555);
+    transition: transition .3s;
+}
 
+.pricing__cards--3:hover{
+    transform: translateY(-1.5rem) scale(1);
+    cursor:pointer;
 }
 
 .pricing-cards__icon--3{
