@@ -654,12 +654,25 @@ p{
     .column__info{
         display:flex;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: space-around;
     }
+
+    
 
 .studio-type__list {
    list-style-type: none;
    text-align: left;
+   font-size: 12px;
    
 }
-    
+
+.bedroom__list{
+    list-style-type: none;
+    text-align: left;
+    font-size: 12px;
+     
+}
+.list-headings{
+    text-align: center;
+    font-size: 20px;
+}
