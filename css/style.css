@@ -633,7 +633,8 @@ p{
 .footer {
     height: 40vh;
     background-color:rgb(80, 78, 78);
-    padding-top:20px;
+    padding-top:30px;
+    padding-bottom: 0;
 }
 
 .footer-container{
@@ -642,7 +643,6 @@ p{
     justify-content: space-around;
     color:white;
     margin-bottom: 10px;
-    
     font-size: 20px;
     text-align: center;
 
@@ -708,6 +708,18 @@ p{
 .footer__credits--link{
     text-decoration: none;
     color:#fff;
+}
+
+.footer__nav--container{
+    height: 10vh;
+    background-color:rgba(80, 78, 78, 0.534);
+    color: #FFF;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
 }
 
 
