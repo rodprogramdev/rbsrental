@@ -672,7 +672,17 @@ p{
     font-size: 12px;
      
 }
+
+.petFriendly__list{
+    list-style-type: none;
+    text-align: left;
+    font-size: 12px;
+}
+
+
+
 .list-headings{
     text-align: center;
     font-size: 20px;
 }
+
