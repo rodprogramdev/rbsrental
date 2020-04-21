@@ -712,7 +712,7 @@ p{
 
 .footer__nav--container{
     height: 10vh;
-    background-color:rgba(80, 78, 78, 0.534);
+    background-color:rgba(80, 78, 78, 0.719);
     color: #FFF;
     margin: 0;
     display: flex;
@@ -721,5 +721,34 @@ p{
     align-items: center;
 
 }
+
+.footer-logo{
+    font-size: 20px;
+    color: #fff;
+}
+
+.footer__nav--list{
+
+}
+
+.li__footer__nav-items{
+    list-style-type: none;
+    float: left;
+    font-size: 15px;
+    color: black;
+}
+
+.li__social-media--item{
+    list-style-type: none;
+    float:left;
+    font-size: 15px;
+    color: black;
+}
+
+.footer__nav--social-media{
+
+}
+
+
 
 
