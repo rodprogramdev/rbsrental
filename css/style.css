@@ -416,13 +416,13 @@ rgba(0, 0, 0, 0.644)*/
 
    
    .listing-container{
-       height: 100vh;
+       height: 60vh;
        position: relative;
        display:flex;
        flex-direction: column;
        justify-content: center;
        align-items: center;
-       background-color:lightgray;
+       background-color:rgba(236, 195, 195, 0.507);
        border-radius: 20px;
        margin: 20px;
        box-shadow: 0 10px 20px black;
@@ -523,6 +523,7 @@ p{
 
 /*Section-pricing*/
 .section-pricing{
+    margin-top: -195px;
     position: relative;
     height:100vh;
     background-image: linear-gradient(to right bottom, 
