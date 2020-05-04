@@ -743,6 +743,34 @@ p{
     float:left;
     font-size: 15px;
     color: black;
+    padding: 5px;
+}
+
+
+.img-icon{
+    transition: all .2s;
+}
+
+.img-icon:hover{
+    transform: scale(1.2);
+}
+
+.social-media--link1{
+    cursor: pointer;
+    
+    
+}
+
+.social-media--link2{
+    cursor: pointer;
+}
+
+.social-media--link3{
+    cursor: pointer;
+}
+
+.social-media--link4{
+    cursor: pointer;
 }
 
 .footer__nav--social-media{
