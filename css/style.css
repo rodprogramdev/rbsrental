@@ -486,7 +486,8 @@ rgba(0, 0, 0, 0.644)*/
         width: 40%;
         background-color: lightblue;
         border-radius: 15px;
-        margin-bottom: 20px;
+        margin-top: 5px;
+        margin-bottom: 40px;
         transition: all .2s;
         cursor: pointer;
 }
@@ -502,7 +503,7 @@ rgba(0, 0, 0, 0.644)*/
     width: 40%;
     background-color: lightpink;
     border-radius: 15px;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
     transition: all .2s;
         cursor: pointer;
     
@@ -532,6 +533,7 @@ rgba(0, 0, 0, 0.644)*/
 .listing-textbox{
     padding-top:15px;
     margin-left:180px;
+    font-size: 12px;
     
 }
 
