@@ -1,0 +1,26 @@
+{
+  "name": "rbslrental",
+  "version": "1.0.0",
+  "description": "Rbslrental Project",
+  "main": "index.js",
+  "scripts": {
+     "compile:sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rodprogramdev/rbsrental.git"
+  },
+  "keywords": [
+    "rental",
+    "business"
+  ],
+  "author": "Rodrigo Bonzerr S. Lope",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rodprogramdev/rbsrental/issues"
+  },
+  "homepage": "https://github.com/rodprogramdev/rbsrental#readme",
+  "devDependencies": {
+    "node-sass": "^4.14.1"
+  }
+}
