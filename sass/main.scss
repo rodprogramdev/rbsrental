@@ -948,11 +948,32 @@
             transform: scale(1.2);
         }
         
+        .link-nav{
+            padding: 10px;
+        }
+        .link-nav:link,
+        .link-nav:visited {
+            text-decoration: none;
+            display: inline-block;
+            transition: all .2s;
+        }
+
+        .link-nav:hover,
+        .link-nav:active{
+            color: lightgreen;
+           /* box-shadow: 1rem 1rem 1rem skyblue;*/
+            transform: scale(1.2);
+        }
+
+
+
         .social-media--link1{
             cursor: pointer;
-            
+                       
             
         }
+
+        
         
         .social-media--link2{
             cursor: pointer;
