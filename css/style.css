@@ -540,19 +540,34 @@ body {
 .listing {
   height: 100vh;
   box-shadow: #071308;
-  margin-bottom: 200px; }
+  margin-top: 1rem;
+  margin-bottom: 20rem;
+  /*200px*/ }
 
 .listing-container {
   height: 70vh;
+  background-image: url(../images/10264.jpg);
+  /*photo from kjpargeter freepik.com https://www.freepik.com/free-photo/3d-contemporary-living-room-interior-modern-furniture_4512083.htm#page=1&query=living%20room&position=5*/
+  background-size: cover;
+  background-position: bottom;
   position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: rgba(236, 195, 195, 0.507);
+  color: white;
   border-radius: 20px;
-  margin: 60px;
-  box-shadow: 0 10px 20px black; }
+  margin: 6rem;
+  /*60px*/
+  box-shadow: 0 1rem 2rem black;
+  /*10px 20px*/ }
+
+.listing-textbox {
+  background-color: rgba(19, 8, 8, 0.658);
+  padding: 1.5rem;
+  margin-right: 5rem;
+  border-radius: 1rem; }
 
 .listing-query--container {
   position: relative;
@@ -560,12 +575,14 @@ body {
 
 .listing-query--heading {
   position: absolute;
-  text-transform: uppercase;
-  top: 50%;
-  left: 15%;
-  transform: translate(-5%, -100%);
+  /*text-transform: uppercase;*/
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -150%);
   font-family: 'Liu Jian Mao Cao', cursive;
-  text-align: center; }
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 0; }
 
 .header-secondary {
   backface-visibility: hidden;
@@ -574,12 +591,12 @@ body {
 
 .header-secondary--main {
   display: block;
-  font-size: 3rem;
+  font-size: 5rem;
   /*40px;*/
   letter-spacing: .12rem;
   /*12px;*/
   font-weight: 900;
-  color: #050e06;
+  color: #e9fceb;
   animation-name: moveInLeft;
   animation-duration: 2s;
   animation-timing-function: ease-out; }
@@ -587,18 +604,24 @@ body {
 .header-secondary--sub {
   color: #050e06;
   font-size: 2rem;
-  text-transform: none; }
+  text-transform: none;
+  margin-top: 0;
+  margin-bottom: 2rem; }
 
 .listing-cards--container {
   padding: 10px 20px;
   position: absolute; }
 
 .listing-cards--1 {
+  text-transform: uppercase;
+  display: block;
+  text-align: center;
   padding: 2px 80px 5px 30px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
   width: 40%;
-  background-color: lightblue;
+  background-color: rgba(31, 206, 83, 0.808);
+  /*rgba(173, 216, 230, 0.616);*/
   border-radius: 15px;
   margin-top: 5px;
   margin-bottom: 40px;
@@ -609,11 +632,12 @@ body {
   transform: scale(1.2); }
 
 .listing-cards--2 {
+  text-transform: uppercase;
   padding: 12px 80px 12px 30px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
   width: 40%;
-  background-color: lightpink;
+  background-color: rgba(255, 182, 193, 0.801);
   border-radius: 15px;
   margin-bottom: 40px;
   transition: all .2s;
@@ -623,11 +647,12 @@ body {
   transform: scale(1.2); }
 
 .listing-cards--3 {
+  text-transform: uppercase;
   padding: 2px 80px 5px 30px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
   width: 40%;
-  background-color: lightgreen;
+  background-color: rgba(16, 38, 235, 0.808);
   border-radius: 15px;
   margin-bottom: 5px;
   transition: all .2s;
@@ -791,7 +816,12 @@ a:link {
 
 .footer__credits--link {
   text-decoration: none;
-  color: #fff; }
+  color: #fff;
+  transform: scale(2);
+  transition: all .2s; }
+
+.footer__credits--link:hover {
+  box-shadow: 0.5rem 0.5rem 0.5rem 0rem rgba(18, 247, 117, 0.774); }
 
 .footer__nav--container {
   height: 10vh;
