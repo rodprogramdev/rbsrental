@@ -1,223 +1,20 @@
- /*
-        grid-width: 114rem 1140px /10;
-        gutter-vertical: 80px / 10 8rem;
-        gutter-horizontal: 60px / 10 6 rem;
-        
-        
-        .row {
-            max-width: 1140px;
-            background-color: blue;
-            margin: 0 auto;
-            margin-bottom: 80px;
+/* COLOR VARIABLES 
 
-           
-        }
+www.htmlcsscolor.com checking for color names 
 
-        .row:not(:last-child) {
-                margin-bottom: 80px;
-            }
+*/
 
-1140px / 2 - gutter width
-        .col-1-of-2{
-            width:  calc((100% - 60px)/2);
-            background-color: orange;
-            float: left;
-
-        }
-
-        /*clearfix
-        .clearfix::after{
-                       
-
-        }
+$color-gray-dark:#777;
+$color-black: rgb(0,0,0);
+$color-ivory:rgb(248,248,247);
+$color-blackBean: rgb(5,14,7);
+$color-sealBrown:rgb(58, 29, 29);
+$color-white: #fff;
+$color-peachpuff: rgb(255, 218, 185);
+$color-nero: #222;
 
 
-         [class^="col-"]{
 
-        }
-       
-       
-        
-        .row::after{
-            content: "";
-            display: table;/*standard value of clearfix           
-            clear: both; /*clear float left or right
-        }
-
-        .col-1-of-2:not(:last-child){
-            margin-right: 60px;
-        }
-
-        .col-1-of-3{
-            width: calc((100% - 2 * 60px)/3 );
-            background-color: orange;
-            float: left;
-            
-        }
-
-        .col-1-of-3:not(:last-child){
-            margin-right: 60px;
-        }
-
-
-        .col-2-of-3{
-            width: calc( 2*     ((100% - 2 * 60px)/3) + 60px);
-            background-color: orange;
-            float: left;
-            
-        }
-
-        .col-2-of-3:not(:last-child){
-            margin-right: 60px;
-        }
-
-        */
-
-        /*SASS Variables
-        $color-primary
-        $color-secondary
-        $color-tertiary
-        $color-text-dark:
-        $color-text-white:#eee;
-
-        $width-button:150px;
-
-        @mixin clearfix {
-             &::after{
-                content: "";
-                clear: both;
-                display: table;
-            }
-        }
-
-
-        @mixin style-link-text($color){
-            text-decoration: none;
-            text-transform: uppercase
-            color: $color-text-light; // version with argument color: $color;
-        }
-
-        @function functionName($a,$b) {
-            @return $a / $b;
-        }
-        */
-
-        /*clearfix
-        we can add it to the main element for example
-        nav class="clearfix"
-        
-        .clearfix::after{
-            content: "";
-            clear: both;
-            display: table;
-
-        }
-
-        We can do it like this by adding it to the element
-        nav::after{
-            content: "";
-            clear: both;
-            display: table;
-
-        }
-
-        Lastly we can try to use SCSS
-
-        nav{
-            margin: 20px; // version with function margin: divide(40, 2) *1px;
-            background-color: $color-primary;
-
-            &::after{
-                content: "";
-                clear: both;
-                display: table;
-            }
-
-        }
-
-
-        Version from where mixin is inlcluded 
-        nav{
-            margin: 20px;
-            background-color: $color-primary;
-
-            @include clearfix;
-
-        }
-
-
-        .btn-main:link,
-        .btn-hot:link{
-            padding: 10px;
-            display: inline-block;
-            text-align: center;
-            border-radius:100px;
-            width: $width-button;
-            text-decoration: none;
-            text-transform: uppercase;
-            
-            color: $color-text-light;
-        }
-
-        version mixin
-        .btn-main:link,
-        .btn-hot:link{
-            padding: 10px;
-            display: inline-block;
-            text-align: center;
-            border-radius:100px;
-            width: $width-button;
-            @include style-link-text($color-text-dark);
-        }
-
-
-        version extends
-        %btn-placeholder{
-             padding: 10px;
-            display: inline-block;
-            text-align: center;
-            border-radius:100px;
-            width: $width-button;
-            @include style-link-text($color-text-dark);
-        }
-
-        .btn-main{
-            &:link {
-                background-color: $color-secondary;
-            }
-
-            &:hover{
-                background-color: darken($color-secondary, 15%);//color-function darken or lighten
-
-            }
-
-        }
-
-        version with extend
-        
-        .btn-main{
-            &:link {
-                @extend %btn-placeholder;
-                background-color: $color-secondary;
-            }
-
-            &:hover{
-                background-color: darken($color-secondary, 15%);//color-function darken or lighten
-
-            }
-
-        }
-
-        .btn-hot{
-            &:link
-            @extend %btn-placeholder;
-            background-color: $color-tertiary;
-        }
-        
-        */
-        
-        
-        
 
         *,
         *::after,
@@ -229,40 +26,26 @@
         }
         
         html{
-            font-size: 62.5%; /*1 rem is equal to 10px the root font-size / by ten 
-            we want to change this to percentage.
-            16px is the default
-            100% = 16px if the user doesn't change anything.
-            
-            10 / 16px = 0.625
-        
-            62.5%
-            */
+            font-size: 62.5%; 
         }
         body{
             font-family: cursive;
             font-weight: 400;
             line-height: 1.7;
-            color: #777;
-            box-sizing:border-box;
-        /*   padding: 30px; background: #70c4ca;*/
-           
-         
-         /*font-family: 'Dancing Script', cursive;*/
+            color: $color-gray-dark;
+            box-sizing:border-box;  
+            
         
         }
-        
-        
-        /*Header section*/
+        /*HEADER SECTION*/
         .header{
             
             height: 100vh;
-           /* background-color: lightblue;*/
             position: relative;
             background-image: linear-gradient(to right bottom, 
-            rgba(1, 2, 2, 0.171),  
-            rgba(248, 248, 247, 0.418)),
-            url("../images/couples.jpg");
+            rgba($color-black, 0.171),  
+            rgba($color-ivory, 0.418)),
+            url("../images/couples.jpg"); /*Photos from https://www.freepik.com/free-photos-vectors/house*/
             background-size: cover;
             background-position: bottom;
             position: relative;
@@ -291,15 +74,15 @@
             font-size:  4rem;/*40px;*/
             letter-spacing:  1.2rem;/*12px;*/
             font-weight: 900;
-            color: rgb(5, 14, 6);
+            color: $color-blackBean;
             animation-name: moveInLeft ;
             animation-duration:2s;
             animation-timing-function: ease-out;
             
             /*
             animation-delay: 3s; wait for 3s before rendering
-        animation-iteration-count: 2; this will happen three times
-        animation-timing-function: ease-out; will specify animation how it should progress over the duration of each cycle.
+            animation-iteration-count: 2; this will happen three times
+            animation-timing-function: ease-out; will specify animation how it should progress over the duration of each cycle.
         
             */
 
@@ -324,7 +107,7 @@
             animation: moveInRight 2s ease-out;
             display: block;
             margin-bottom: 6rem;/*60px;*/
-            color: rgb(5, 14, 6);
+            color: $color-blackBean;
             /*
             animation-name: moveInRight;
             animation-duration:5s;*/
@@ -392,9 +175,9 @@
            
            display:inline-block;
            border-radius: 10rem;/*100px; */
-          border: .2rem solid rgba(0, 0, 0, 0.644); /*2px*/
+          border: .2rem solid rgba($color-black, 0.644); /*2px*/
           transition: all;
-          color: rgb(58, 29, 29);
+          color: $color-sealBrown;
           position: relative;
           font-size: 1.6rem;
           
@@ -407,17 +190,17 @@
         
         .btn:hover{
             transform: translateY(-1rem); /*-10px*/
-            box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.384);   /*10px 20px*/
+            box-shadow: 0 1rem 2rem rgba($color-black, 0.384);   /*10px 20px*/
         }
         
         .btn:active{
             transform: translateY(-1px); /*this is related to the link state and not the hover state it always related to the initial state*/
-             box-shadow: 0 .5rem .5rem rgba(0, 0, 0, 0.384); /*5px 5px*/
+             box-shadow: 0 .5rem .5rem rgba($color-black, 0.384); /*5px 5px*/
         }
         
         .btn--brightRed{
-            background-color:#FFF;
-            color: rgb(58, 29, 29); 
+            background-color:$color-white;
+            color: $color-sealBrown; 
             
         }
         
@@ -438,7 +221,7 @@
         }
         
         .btn--brightRed::after{
-            background-color:#FFF;
+            background-color:$color-white;
            
            
         }
@@ -446,7 +229,7 @@
         .btn:hover::after{
             transform: scaleX(1.4) scaleY(1.6);
             opacity: 0; /*trick for fading effect*/
-            border: .2rem solid rgba(0, 0, 0, 0.644); /*2px*/
+            border: .2rem solid rgba($color-black, 0.644); /*2px*/
             
         }
         
@@ -466,7 +249,7 @@
         }
         */
         
-        /*Section cards - try*/
+        /*SECTION CARDS*/
         
         .section-cards{
             margin: 2rem; /*20px*/
@@ -491,10 +274,10 @@
             position: relative;
             width: 30rem; /*300px*/
             height: 45rem; /*350px*/
-            background: peachpuff; /*Nero rgb(34, 25, 25)*/
+            background: $color-peachpuff; /*Nero rgb(34, 25, 25)*/
             margin: 0 auto;
             border-radius: .4rem; /*4px*/
-            box-shadow:0 .2rem 1rem rgba(0,0,0,.2); /*2px 10px*/
+            box-shadow:0 .2rem 1rem rgba($color-black,.2); /*2px 10px*/
           }
           .section-cards__card:before,
           .section-cards__card:after
@@ -506,17 +289,17 @@
             width: 100%;
             height: 100%;
             border-radius: .4rem; /*4px*/
-            background: peachpuff;
+            background: $color-peachpuff;
             transition: 0.5s;
             z-index:-1;
           }
           .section-cards__card:hover:before{
           transform: rotate(20deg);
-          box-shadow: 0 .2rem 2rem rgba(0,0,0,.2); /*2px 20px*/
+          box-shadow: 0 .2rem 2rem rgba($color-black,.2); /*2px 20px*/
           }
           .section-cards__card:hover:after{
           transform: rotate(10deg);
-          box-shadow: 0 .2rem 2rem rgba(0,0,0,.2);  /*2px 20px*/
+          box-shadow: 0 .2rem 2rem rgba($color-black,.2);  /*2px 20px*/
           }
           .section-cards__card .imgBx{
           position: absolute;
@@ -524,7 +307,7 @@
           left: 1rem; /*10px*/
           bottom: 1rem; /*10px*/
           right: 1rem; /*10px*/
-          background: #222;
+          background: $color-nero;
           transition: 0.5s;
           z-index: 1;
           }
@@ -919,7 +702,8 @@
         }
         
         
-        .footer__credits--link{
+        .footer__credits--link,
+        .footer__credits--link:visited{
             text-decoration: none;
             color:#fff;
             transform:scale(2);
@@ -928,11 +712,14 @@
             
         }
 
+       
         .footer__credits--link:hover{
-            
-            box-shadow: .5rem .5rem .5rem 0rem rgba(18, 247, 117, 0.774);
+            /*box-shadow: .2rem .1rem .5rem .2rem rgba(18, 247, 117, 0.774);*/
+            text-shadow: .1rem -8px .1rem rgb(18, 247, 117);
         }
         
+
+       
         .footer__nav--container{
             height: 10vh;
             background-color:rgba(80, 78, 78, 0.719);
