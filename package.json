@@ -21,7 +21,7 @@
   },
   "homepage": "https://github.com/rodprogramdev/rbsrental#readme",
   "devDependencies": {
-    "node-sass": "^4.14.1",
+    "node-sass": "^7.0.0",
     "tar": ">=4.4.18"
   } 
 }
